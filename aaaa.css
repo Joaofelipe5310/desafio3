@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    display: block;
+    position: relative;
+    padding-left: 24px;
+    padding-bottom: 1px;
+    cursor: pointer;
+}
+
+.container input{
+    cursor: pointer;
+    opacity: 0;
+}
+
+.check{
+    left: 0;
+    top: 0;
+    width: 19px;
+    height: 19px;
+    background: #1e1e1e;
+    border: 1px solid #ccc;
+    position: absolute;
+    border-radius: 20%;
+}
+
+.container input:checked ~ .check{
+    background-color: #FFC632;
+}
+
+.container .check:after{
+    top: 1px;
+    left: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #473404;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.check::after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .check::after{
+    display: block;
+}

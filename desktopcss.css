@@ -1,0 +1,41 @@
+
+@media (max-width:700px){
+    .body1{
+      width: 100%;
+    }
+  
+    .body2{
+     display: none;
+    }
+  }
+
+
+
+@media (min-width:43.75rem){
+    *{
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    main{
+        background: #24221F;
+        margin: auto;
+        padding-inline: 7.25rem;
+        padding-block: 3.375rem;
+    }
+
+    input{
+        background-color: #24221F;
+    }
+
+    .body1{
+        height: 100vh;
+    }
+
+    .body2{
+        height: 100vh;
+    }
+
+}
